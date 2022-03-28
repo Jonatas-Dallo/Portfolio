@@ -1,0 +1,53 @@
+nav{
+	width: 97%;	
+}
+
+.menu{
+	font-family: "impact";
+	font-size: 32pt;
+	
+}
+.menu ul{
+	list-style: none;
+	display: flex;
+	text-align: center;
+	
+}
+.menu ul li{
+
+	padding: 10px;
+	flex-grow: 1;
+	transition: background-color .2s linear;
+	border: solid 1px transparent;
+	
+}
+.menu ul li a{
+	text-decoration:none;
+	color: #f2f2f2;
+	}
+
+.menu ul li:hover{
+	border: solid 1px #fff;
+	background-color:transparent !important;
+	cursor: pointer;
+}
+.menu ul li:hover ul li ul{
+	display: block;
+}
+#item1{
+	background-color: rgba(17, 0, 255, 0.63);
+}
+#item2{
+	background-color: #dd0505;
+}
+#item3{
+	background-color: #1ed145;
+}
+
+}
+@media (max-width: 520px) {
+ .menu ul{
+ 	display:block;
+ }
+
+}
