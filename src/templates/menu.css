@@ -1,45 +1,70 @@
-nav{
-	width: 97%;	
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	appearance: none;
+	border-style: initial;
+	border-color: initial;
+	border-image: initial;
+	border-width: 0px;
+	text-size-adjust: 100%;
 }
+/** reseta as config da pagina pra padrão**/
+
+nav{
+	width: 100%;	
+}
+/** tamanho da barra de menu em relação a pagina**/
+
 
 .menu{
 	font-family: "impact";
 	font-size: 32pt;
-	
 }
+/** deixa a barra grande **/
+
 .menu ul{
 	list-style: none;
 	display: flex;
 	text-align: center;
 	
 }
+/** mantem os botões um do lado do outro**/
+
+
 .menu ul li{
 
 	padding: 10px;
 	flex-grow: 1;
+	/** necessario pra barra ficar na pagina toda**/
 	transition: background-color .2s linear;
+	/** o delay dop branquinho que aparece ao por o mouse em cima**/
 	border: solid 1px transparent;
-	
+	/** deixa a borda solida para impedir de ficar mexendo a pagina ao passar o mouser**/
 }
+
+
 .menu ul li a{
 	text-decoration:none;
 	color: #f2f2f2;
-	}
+}
+/** mexe com as letras dos botões **/
 
 .menu ul li:hover{
 	border: solid 1px #fff;
 	background-color:transparent !important;
-	cursor: pointer;
+	cursor: pointer;/
 }
-.menu ul li:hover ul li ul{
-	display: block;
-}
+/** responsavel por criar o efeito branquinho ao passar o mouse**/
+
 #item1{
 	background-color: rgba(17, 0, 255, 0.63);
 }
+
 #item2{
 	background-color: #dd0505;
 }
+
 #item3{
 	background-color: #1ed145;
 }
