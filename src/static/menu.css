@@ -70,9 +70,21 @@ nav{
 }
 
 }
-@media (max-width: 520px) {
+
+.teste{
+	text-align: justify;
+	text-align: center;
+}
+
+@media (max-width: 800px) {
  .menu ul{
  	display:block;
  }
-
 }
+
+ /* link que foi visitado */
+ a:visited {
+	color: inherit;
+ }
+/* muda a cor das palavras com link */
+ 
