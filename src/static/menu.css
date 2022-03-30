@@ -71,11 +71,6 @@ nav{
 
 }
 
-.teste{
-	text-align: justify;
-	text-align: center;
-}
-
 @media (max-width: 800px) {
  .menu ul{
  	display:block;
