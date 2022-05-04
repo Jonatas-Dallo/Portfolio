@@ -8,14 +8,47 @@
 	border-image: initial;
 	border-width: 0px;
 	text-size-adjust: 100%;
+	width: 100%;
 }
 /** reseta as config da pagina pra padrão**/
+body{
+	width: 100%;
+}
+
+#fundo{
+	background-color: #c8faf7;
+}
+
+.foto{
+	width: 300px;
+	height: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nome{
+	padding: 10%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+h2{
+	padding: 2%;
+	display: flex;
+	justify-content: left;
+}
+
+
+
+/**            **/
 
 nav{
 	width: 100%;	
 }
 /** tamanho da barra de menu em relação a pagina**/
-
 
 .menu{
 	font-family: "impact";
@@ -46,27 +79,27 @@ nav{
 
 .menu ul li a{
 	text-decoration:none;
-	color: #f2f2f2;
+	color: #000000;
 }
 /** mexe com as letras dos botões **/
 
 .menu ul li:hover{
-	border: solid 1px #fff;
+	border: solid 1px rgb(135, 253, 135);
 	background-color:transparent !important;
-	cursor: pointer;/
+	cursor: pointer;
 }
 /** responsavel por criar o efeito branquinho ao passar o mouse**/
 
 #item1{
-	background-color: rgba(17, 0, 255, 0.63);
+	background-color: rgb(77, 248, 77);
 }
 
 #item2{
-	background-color: #dd0505;
+	background-color: rgb(77, 248, 77);
 }
 
 #item3{
-	background-color: #1ed145;
+	background-color: rgb(77, 248, 77);
 }
 
 }
