@@ -15,16 +15,86 @@ body{
 	width: 100%;
 }
 
-#fundo{
-	background-color: #c8faf7;
+.barra{
+    background-color: rgb(252, 255, 64);;
+    height: 100%;
+    width: 150px;
+    position: absolute;
+    transition: all .2s linear;
+    left: -300px;
+}
+
+.link{
+    color: rgb(252, 255, 64);
+    background-color: #071fd4;
+    padding: 20px;
+    font-family: Arial;
+    font-size: 15pt;
+    transition: all .2s linear;
+    border-bottom: 2px solid #222;
+	border-top: 1px solid #222;
+    opacity: 0;
+    margin-top: 200px;
+}
+
+.link:houver{
+    background-color: #050542;
+}
+
+#check{
+    display: none;
+}
+
+#icone{
+	width: 60px;
+	height: 60px;
+    cursor: pointer;
+    padding: 5px;
+    z-index: 1;
+}
+
+nav{
+    width: 100%;
+    position: absolute;
+}
+
+nav a{
+    text-decoration: none;
+	margin-top: 2%;
+}
+
+#check:checked ~ .barra{
+    transform: translate(300px);
+}
+
+#check:checked ~ .barra nav a .link{
+    opacity: 1;
+    margin-top: 0;
+    transition-delay: .2s;
+	margin-top: 2%;
+}
+
+/** fim nav bar **/
+
+.inicio{
+	text-align: center;
 }
 
 .foto{
-	width: 300px;
-	height: 300px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+	width: 250px;
+	height: 250px;
+	border-radius: 50%;
+	margin-bottom: 1%;
+}
+
+.texto{
+	text-align: center;
+}
+
+.a{
+	justify-content: center;
+	padding-left: 1%;
+	font-size: large;
 }
 
 .nome{
@@ -35,74 +105,7 @@ body{
 	flex-direction: column;
 }
 
-h2{
-	padding: 2%;
-	display: flex;
-	justify-content: left;
-}
-
-
-
 /**            **/
-
-nav{
-	width: 100%;	
-}
-/** tamanho da barra de menu em relação a pagina**/
-
-.menu{
-	font-family: "impact";
-	font-size: 32pt;
-}
-/** deixa a barra grande **/
-
-.menu ul{
-	list-style: none;
-	display: flex;
-	text-align: center;
-	
-}
-/** mantem os botões um do lado do outro**/
-
-
-.menu ul li{
-
-	padding: 10px;
-	flex-grow: 1;
-	/** necessario pra barra ficar na pagina toda**/
-	transition: background-color .2s linear;
-	/** o delay dop branquinho que aparece ao por o mouse em cima**/
-	border: solid 1px transparent;
-	/** deixa a borda solida para impedir de ficar mexendo a pagina ao passar o mouser**/
-}
-
-
-.menu ul li a{
-	text-decoration:none;
-	color: #000000;
-}
-/** mexe com as letras dos botões **/
-
-.menu ul li:hover{
-	border: solid 1px rgb(135, 253, 135);
-	background-color:transparent !important;
-	cursor: pointer;
-}
-/** responsavel por criar o efeito branquinho ao passar o mouse**/
-
-#item1{
-	background-color: rgb(77, 248, 77);
-}
-
-#item2{
-	background-color: rgb(77, 248, 77);
-}
-
-#item3{
-	background-color: rgb(77, 248, 77);
-}
-
-}
 
 @media (max-width: 800px) {
  .menu ul{
