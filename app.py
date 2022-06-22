@@ -9,7 +9,7 @@ def index():
 
 @app.route('/interesse')
 def interesses():
-    return render_template('interesses.html')
+    return render_template('interesse.html')
 
 @app.route('/portfolio')
 def portfolio():
