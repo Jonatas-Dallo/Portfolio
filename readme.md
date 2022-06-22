@@ -7,24 +7,35 @@
 ## Itens do repositorio
 
 - [DOC](#doc)
-- [SRC](#src)
 - [TEMPLATES](#templates)
 - [STATIC](#static)
-- [IMG](#img)
+- [HEROKU](#heroku)
+- [GITIGNORE](#gitignore)
+- [REQUIREMENTS.TXT](#requirementstxt)
+- [CONFIGURAÇÕES](#configurações)
+
+## Heroku
+Plataforma de nuvem permitindo hospedar o projeto no link:
+https://desing-jonatas.herokuapp.com
 
 ## Doc
 Pasta de documentos não relacionado ao codigo diretamente, contendo atualmente o wireframe.pdf(um pdf de como o site fica na versão mobile e desktop) do site, sendo prints seguidas pois o site já se apresenta responsivo para ambos.
-
-## Src
-Pasta onde é organizado os códigos do projeto.
 
 ## Templates
 Local onde os arquivos .html se encontram.
 
 ## Static
-Local onde os arquivos de estilização .css estão, assim como a pasta img.
+Local onde os arquivos de estilização .css estão, assim como a pasta img com as imagens.
 
-## Img
-Pasta que mantem guardado as imagens usadas no projeto
+## Gitignore
+gitignore é um arquivo de texto que diz ao Git quais arquivos ou pastas ele deve ignorar em um projeto, usado neste para ignorar ambiente virtual criado localmente.
+
+## Requirements.txt
+O arquivo "requirements. txt" contém as informações e versões dos pacotes necessários para rodar algum script ou projeto.
+
+## Configurações
+O arquivo app.py serve para configurar o flask e as rotas, assim como procfile para dizer ao heroku para executar o app.py, por fim o readme.md usado para criar essa página que você está lendo. 👋
+
+
 
 
