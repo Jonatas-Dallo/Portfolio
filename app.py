@@ -1,19 +1,19 @@
 from flask import Flask, render_template
 
-app = Flask("__name__",template_folder='templates')
+app = Flask("__name__")
 
 @app.route('/')
 @app.route('/index')
 def index():
     return render_template('index.html')
 
-@app.route('/int')
+@app.route('/interesses')
 def interesses():
     return render_template('interesses.html')
 
-@app.route('/port')
+@app.route('/portfolio')
 def portfolio():
-    return render_template('portfólio.html')
+    return render_template('portfolio.html')
 
 
 if __name__ == "__ main__":
