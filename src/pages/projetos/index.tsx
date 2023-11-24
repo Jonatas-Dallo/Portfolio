@@ -48,7 +48,7 @@ export default function Projetos() {
                 onMouseLeave={handleCardLeave}
               >
                 <div className="card-body">
-                  <h5 className="card-title">Service Desk</h5>
+                  <h5 className="card-title">Service Desk (2022)</h5>
                   <hr />
                   <p className="card-text">Em modo geral, uma Central de Serviços é uma ferramenta que presta assessoria para solucionar problemas integrado no ambiente de tecnologia da informação. Este projeto será realizado baseado na metodologia ágil SCRUM, que foca no desenvolvimento da proatividade, autonomia e uma melhora da produtividade do time como um todo.</p>
                 </div>
@@ -64,7 +64,7 @@ export default function Projetos() {
                 onMouseLeave={handleCardLeave}
               >
                 <div className="card-body">
-                  <h5 className="card-title">Daily Bot</h5>
+                  <h5 className="card-title">Daily Bot (2022)</h5>
                   <hr />
                   <p className="card-text">Projeto com a  proposta de desenvolver Crawler que consiga buscar, ler o arquivo e identificar o conteúdo relacionado aos Professores Associados, realizar os cruzamentos necessários com as bases de dados de associados, que suportarão está solução, gravar todos os processos publicados relacionados aos associados, e emitir relatório diário para que a equipe consiga disparar os e-mails para os professores citados no Diário Oficial. Caso consigam também realizar a automação do disparo destes e-mails seria uma sofisticação para a solução.</p>
                 </div>
@@ -79,7 +79,7 @@ export default function Projetos() {
                 onMouseLeave={handleCardLeave}
               >
                 <div className="card-body">
-                  <h5 className="card-title">Sistema para gerir cobranças</h5>
+                  <h5 className="card-title">Sistema para gerir cobranças (2023)</h5>
                   <hr />
                   <p className="card-text">Em modo geral, uma Central de Serviços é uma ferramenta que presta assessoria para solucionar problemas integrado no ambiente de tecnologia da informação. Este projeto será realizado baseado na metodologia ágil SCRUM, que foca no desenvolvimento da proatividade, autonomia e uma melhora da produtividade do time como um todo.</p>
                 </div>
@@ -94,7 +94,7 @@ export default function Projetos() {
                 onMouseLeave={handleCardLeave}
               >
                 <div className="card-body">
-                  <h5 className="card-title">Sistema de Coleta de Dados de Estações Meteorológicas</h5>
+                  <h5 className="card-title">Sistema de Coleta de Dados de Estações Meteorológicas (2023)</h5>
                   <hr />
                   <p className="card-text">Em modo geral, uma Central de Serviços é uma ferramenta que presta assessoria para solucionar problemas integrado no ambiente de tecnologia da informação. Este projeto será realizado baseado na metodologia ágil SCRUM, que foca no desenvolvimento da proatividade, autonomia e uma melhora da produtividade do time como um todo.</p>
                 </div>
@@ -121,7 +121,7 @@ export default function Projetos() {
                 onMouseLeave={handleCardLeave}
               >
                 <div className="card-body">
-                  <h5 className="card-title">Service Desk - 2022</h5>
+                  <h5 className="card-title">Service Desk (2022)</h5>
                   <hr />
                   <p className="card-text">Em modo geral, uma Central de Serviços é uma ferramenta que presta assessoria para solucionar problemas integrado no ambiente de tecnologia da informação. Este projeto será realizado baseado na metodologia ágil SCRUM, que foca no desenvolvimento da proatividade, autonomia e uma melhora da produtividade do time como um todo.</p>
                 </div>
@@ -137,7 +137,7 @@ export default function Projetos() {
                 onMouseLeave={handleCardLeave}
               >
                 <div className="card-body">
-                  <h5 className="card-title">Daily Bot - 2022</h5>
+                  <h5 className="card-title">Daily Bot (2022)</h5>
                   <hr />
                   <p className="card-text">Projeto com a  proposta de desenvolver Crawler que consiga buscar, ler o arquivo e identificar o conteúdo relacionado aos Professores Associados, realizar os cruzamentos necessários com as bases de dados de associados, que suportarão está solução, gravar todos os processos publicados relacionados aos associados, e emitir relatório diário para que a equipe consiga disparar os e-mails para os professores citados no Diário Oficial. Caso consigam também realizar a automação do disparo destes e-mails seria uma sofisticação para a solução.</p>
                 </div>
@@ -152,7 +152,7 @@ export default function Projetos() {
                 onMouseLeave={handleCardLeave}
               >
                 <div className="card-body">
-                  <h5 className="card-title">Sistema para gerir cobranças - 2023</h5>
+                  <h5 className="card-title">Sistema para gerir cobranças (2023)</h5>
                   <hr />
                   <p className="card-text">Em modo geral, uma Central de Serviços é uma ferramenta que presta assessoria para solucionar problemas integrado no ambiente de tecnologia da informação. Este projeto será realizado baseado na metodologia ágil SCRUM, que foca no desenvolvimento da proatividade, autonomia e uma melhora da produtividade do time como um todo.</p>
                 </div>
@@ -167,7 +167,7 @@ export default function Projetos() {
                 onMouseLeave={handleCardLeave}
               >
                 <div className="card-body">
-                  <h5 className="card-title">Sistema de Coleta de Dados de Estações Meteorológicas</h5>
+                  <h5 className="card-title">Sistema de Coleta de Dados de Estações Meteorológicas (2023)</h5>
                   <hr />
                   <p className="card-text">Em modo geral, uma Central de Serviços é uma ferramenta que presta assessoria para solucionar problemas integrado no ambiente de tecnologia da informação. Este projeto será realizado baseado na metodologia ágil SCRUM, que foca no desenvolvimento da proatividade, autonomia e uma melhora da produtividade do time como um todo.</p>
                 </div>

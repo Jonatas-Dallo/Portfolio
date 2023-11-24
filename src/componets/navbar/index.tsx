@@ -1,12 +1,12 @@
 import React from "react";
-import { Link, useLocation, useNavigate } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import styled from "styled-components";
 import { Button, HeaderWrapper, Icon, IconContainer, IconLogo, IconQuadrado, IconSemRadius, Nav } from "./styled";
 import discord from "../../assets/icons/discord.png";
 import github from "../../assets/icons/github.png";
 import linkedin from "../../assets/icons/linkedin.png";
 import email from "../../assets/icons/email.png";
-import minhaLogo from "../../assets/img/logo-minha.png";
+import minhaLogo from "../../assets/img/logo2.png";
 import copy from "copy-to-clipboard"; 
 
 const NavLink = styled(Link)<{ active?: boolean }>`
@@ -43,7 +43,6 @@ const NavLink = styled(Link)<{ active?: boolean }>`
 function Navbar() {
 
   const location = useLocation();
-  const navigate = useNavigate();
 
   const copiarEmail = () => {
     copy("jonatasmathiasdallo@gmail.com");
@@ -60,7 +59,7 @@ function Navbar() {
       <Nav>
         <IconLogo src={minhaLogo} alt="Minha logo" />
         <NavLink to="/" active={location.pathname === "/"}>Home</NavLink>
-        <NavLink to="/hardskills" active={location.pathname === "/hardskills"}>Hardskills</NavLink>
+        <NavLink to="/sobre" active={location.pathname === "/sobre"}>Sobre mim</NavLink>
         <NavLink to="/projetos" active={location.pathname === "/projetos"}>Projetos</NavLink>
         <IconContainer>
           <Link to="https://github.com/Jonatas-Dallo" target="_blank">

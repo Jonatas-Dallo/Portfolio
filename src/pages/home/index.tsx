@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
-import { Fundo, Container, TituloPrincipal, SegundoTitulo, TerceiroTitulo } from "./styled";
+import { Fundo, Container, TituloPrincipal, SegundoTitulo, TerceiroTitulo, BackgroundImage } from "./styled";
+import MinhaFoto from "../../assets/img/foto-minha.png";
 
 const Home: React.FC = () => {
   const [subtitulo, setSubtitulo] = useState<string>("Desenvolvedor JS");
@@ -22,12 +23,17 @@ const Home: React.FC = () => {
         <div className='container'>
           <div className="col-lg-12">
             <div className='row'>
-
+              <div className="col-sm-10">
               <TituloPrincipal>Olá, meu nome é Jonatas</TituloPrincipal>
               <SegundoTitulo>{subtitulo}</SegundoTitulo>
               <TerceiroTitulo>Seja bem vindo!</TerceiroTitulo>
+              </div>
             </div>
+            
           </div>
+        </div>
+        <div style={{borderColor:" 3px solid white"}}>
+          <BackgroundImage src={MinhaFoto} alt="" className="img-fluid"/>
         </div>
       </Container>
     </Fundo>

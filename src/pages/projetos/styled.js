@@ -4,6 +4,7 @@ export const ContainerStyle = styled.div`
   height: 100%;
   width: 100%;
   background-color: #000000;
+  font-family: "Montserrat", sans-serif;
 `;
 
 export const Titulo = styled.div`
@@ -15,6 +16,7 @@ export const Titulo = styled.div`
 `;
 
 export const CardStyle = styled.div`
+  font-family: "Montserrat", sans-serif;
   width: 19rem;
   margin: auto;
   transition: transform 0.3s, background 0.3s;
@@ -24,6 +26,5 @@ export const CardStyle = styled.div`
   cursor: pointer;
   font-size: 1rem;
   font-weight: 400;
-  font-family: var(--bs-font-sans-serif);
 `;
 
