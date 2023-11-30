@@ -68,14 +68,8 @@ export default function SobreMim() {
                     <div className="row">
                         <ContainerBotoes>
                             <Botoes>
-                                <Botao active={activeButton === 'Sobre Mim'} clicked={clickedButton === 'Sobre Mim'} onClick={() => handleButtonClick('Sobre Mim')}>
+                                <Botao active={activeButton === 'Sobre Mim'} clicked={clickedButton === 'Sobre Mim'} onClick={() => handleButtonClick('Informações')}>
                                     Sobre Mim
-                                </Botao>
-                                <Botao active={activeButton === 'Hard Skills'} clicked={clickedButton === 'Hard Skills'} onClick={() => handleButtonClick('Hard Skills')}>
-                                    Hard Skills
-                                </Botao>
-                                <Botao active={activeButton === 'Soft Skills'} clicked={clickedButton === 'Soft Skills'} onClick={() => handleButtonClick('Soft Skills')}>
-                                    Soft Skills
                                 </Botao>
                             </Botoes>
                         </ContainerBotoes>
