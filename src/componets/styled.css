@@ -1,0 +1,64 @@
+/* NAVBAR */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: black;
+  color: white;
+  z-index: 1000;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  cursor: pointer;
+  color: white;
+  font-size: 18px;
+  padding: 10px;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-item.active {
+  color: #4EE00C;
+  border-bottom: 2px solid #4EE00C;
+}
+
+.nav-item:hover {
+  color: #4EE00C;
+}
+
+.underline {
+  background-color: #009400;
+  height: 2px;
+  width: 100%;
+  margin-top: 5px;
+}
+
+
+
+/* Botao de subir tudo */
+.scroll-to-top {
+  position: fixed;
+  bottom: 1%; /* Ajuste a posição vertical do botão */
+  right: 1%;  /* Ajuste a posição horizontal do botão */
+  background-color: transparent; /* Fundo transparente */
+  border: 2px solid #4EE00C; /* Borda verde */
+  color: #4EE00C; /* Cor do texto */
+  padding: 10px 20px; /* Espaçamento interno */
+  border-radius: 25px; /* Bordas arredondadas */
+  font-size: 16px; /* Tamanho da fonte */
+  cursor: pointer; /* Cursor de ponteiro */
+  transition: background-color 0.3s; /* Efeito de transição */
+}
+
+.scroll-to-top:hover {
+  background-color: rgba(78, 224, 12, 0.1); /* Efeito ao passar o mouse */
+}
