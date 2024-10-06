@@ -1,20 +1,130 @@
 .inicio-card {
     width: 90%; /* Ajuste a largura conforme necessário */
-    height: 70%; /* Ajuste a altura conforme necessário */
+    height: 85%; /* Ajuste a altura conforme necessário */
     border: 2px solid #27BA06; /* Borda verde */
     border-radius: 25px; /* Bordas arredondadas */
     padding: 20px; /* Espaçamento interno */
     margin: 20px auto; /* Centraliza o card horizontalmente */
+
     display: flex;
     flex-direction: column; /* Para que o conteúdo fique em coluna */
     justify-content: center; /* Centraliza verticalmente */
     align-items: center; /* Centraliza horizontalmente */
+
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
-    background-image: url('../../assets/img/backgrounds/background_inicio.png'); /* Substitua pelo caminho da sua imagem */
+    background-image: url('../../assets/img/backgrounds/background_inicio.png');  /*Substitua pelo caminho da sua imagem */
     background-size: cover; /* Faz a imagem cobrir todo o card */
     background-position: center; /* Centraliza a imagem */
     background-repeat: no-repeat; /* Impede que a imagem se repita */
+    margin-top: 5%;
 }
+
+.inicio-texto{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.linha1 {
+    display: flex;
+    flex-direction: column; /* Coloca as palavras em colunas */
+    gap: 10px; /* Espaçamento entre as palavras */
+    width: 80%; /* Garante que ocupe a largura total */
+    font-weight: bold;
+}
+
+.linha1 p:nth-child(1) {
+    width: 100%;
+    padding-right: 50%;
+
+    font-size: 825%; /* Tamanho do texto */
+    color: black;
+    -webkit-text-stroke: 3px #27BA06; /* Borda verde */
+    margin: 0; /* Remove espaçamentos adicionais */
+}
+
+.linha1 p:nth-child(2) {
+    width: 100%;
+    padding-left: 45%;
+    font-size: 700%;
+    color: black;
+    -webkit-text-stroke: 3px #27BA06;
+    margin: 0;
+}
+
+.linha1 p:nth-child(3) {
+    width: 100%;
+    padding-right: 41%;
+    font-size: 600%;
+    color: black;
+    -webkit-text-stroke: 3px #27BA06;
+    margin: 0;
+}
+
+.developer-container {
+    position: relative; /* Necessário para o posicionamento absoluto da imagem */
+}
+
+.developer-text {
+    display: flex;
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+}
+
+.circular-image-github {
+    position: absolute; /* Permite que a imagem seja posicionada sobre o texto */
+    left: 356.625px;
+    top: 1.8px; /* Ajuste se necessário para alinhar verticalmente */
+}
+
+.circular-image-github img {
+    width: 72px; /* Ajuste o tamanho conforme necessário */
+    height: 72px; /* Ajuste o tamanho conforme necessário */
+    border-radius: 50%; /* Torna a imagem circular */
+    transition: transform 0.3s ease;
+    border: 3px solid #27BA06;
+}
+
+.circular-image-github:hover img {
+    transform: scale(1.5); /* Aumenta a imagem em 20% ao passar o mouse */
+    border: 3px solid #27BA06;
+}
+
+/*//////////////////////////////////////*/
+
+.nome-container {
+    position: relative;
+}
+
+.nome-text {
+    display: flex; /* Permite que o texto e a imagem fiquem lado a lado */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+    white-space: nowrap; /* Alinha os itens verticalmente ao centro */
+}
+
+.circular-image-linkedin {
+    position: absolute; /* Permite que a imagem seja posicionada sobre o texto */
+    /*left: 33.8%;  Ajuste este valor para posicionar a imagem sobre o "o" */
+    left: 783px;
+    top: 1.5px; /* Ajuste se necessário para alinhar verticalmente */
+}
+
+.circular-image-linkedin img {
+    width: 71px; /* Ajuste o tamanho conforme necessário */
+    height: 71px; /* Ajuste o tamanho conforme necessário */
+    border-radius: 50%; /* Torna a imagem circular */
+    border: 1px solid #27BA06;
+    transition: transform 0.3s ease;
+    border: 2px solid #27BA06;
+}
+
+.circular-image-linkedin:hover img {
+    transform: scale(1.5); /* Aumenta a imagem em 20% ao passar o mouse */
+    border: 3px solid #27BA06;
+}
+
 
 .section.visible {
     opacity: 1;

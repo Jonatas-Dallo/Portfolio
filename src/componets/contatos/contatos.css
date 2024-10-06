@@ -17,13 +17,13 @@
 }
   
 #contatos {
-    margin-top: -200px; /* Ajuste o valor conforme necessário */
+    margin-top: -10%; /* Ajuste o valor conforme necessário */
     margin-bottom: 0;
 }
 
 .section.visible {
     opacity: 1;
-    transition: opacity 0.5s ease-in-out; /* Efeito de transição */
+    transition: opacity 0.5s ease-in-out; /* Efeito de transição */  
 }
   
 .section {

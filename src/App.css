@@ -1,16 +1,32 @@
+::-webkit-scrollbar {
+  width: 10px; 
+  height: 100%
+}
+
+::-webkit-scrollbar-track {
+  background-image: linear-gradient(to bottom, #32b008, #1f9405, #0D7F53); 
+  border-radius: 25px; 
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #4EE00C; 
+  border-radius: 25px; 
+}
+
 .App {
   font-family: sans-serif;
   text-align: center;
 }
 
 .section {
-  height: 100vh; /* Cada seção ocupa a altura total da viewport */
+  height: 100vh;
+  width: 100%; 
   display: flex;
   align-items: center;
   justify-content: center;
-  opacity: 0; /* Inicialmente invisível */
+  opacity: 0; 
   transform: translateY(50px);
-  transition: opacity 3s ease-out, transform 3s ease-out; /* Ajuste a duração de transição */
+  transition: opacity 3s ease-out, transform 3s ease-out; 
   color: beige;
 }
 
@@ -18,3 +34,4 @@
   opacity: 1;
   transform: translateY(0);
 }
+

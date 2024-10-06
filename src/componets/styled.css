@@ -8,6 +8,8 @@
   z-index: 1000;
   text-align: center;
   padding: 10px 0;
+  border-bottom: 2px solid #27BA06;
+  border-radius: 25px;
 }
 
 .nav-list {
@@ -33,13 +35,6 @@
 
 .nav-item:hover {
   color: #4EE00C;
-}
-
-.underline {
-  background-color: #009400;
-  height: 2px;
-  width: 100%;
-  margin-top: 5px;
 }
 
 
