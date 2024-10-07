@@ -3,6 +3,7 @@ import './styled.css';
 
 const NavBarTop = () => {
   const [activeSection, setActiveSection] = useState('inicio');
+  const [isMenuOpen, setIsMenuOpen] = useState(false); // Novo estado para controlar o menu
 
   const handleClick = (sectionId) => {
     setActiveSection(sectionId);
@@ -10,11 +11,19 @@ const NavBarTop = () => {
     if (section) {
       section.scrollIntoView({ behavior: 'smooth' });
     }
+    setIsMenuOpen(false); // Fecha o menu ao clicar em um item
+  };
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen); // Alterna entre abrir e fechar o menu
   };
 
   return (
     <nav className="navbar">
-      <ul className="nav-list">
+      <div className="menu-icon" onClick={toggleMenu}>
+        &#9776; {/* Ícone de menu "hamburger" */}
+      </div>
+      <ul className={`nav-list ${isMenuOpen ? 'open' : ''}`}>
         <li className={`nav-item ${activeSection === 'inicio' ? 'active' : ''}`} onClick={() => handleClick('inicio')}>Início</li>
         <li className={`nav-item ${activeSection === 'sobreMim' ? 'active' : ''}`} onClick={() => handleClick('sobreMim')}>Sobre Mim</li>
         <li className={`nav-item ${activeSection === 'softSkills' ? 'active' : ''}`} onClick={() => handleClick('softSkills')}>Software Skills</li>

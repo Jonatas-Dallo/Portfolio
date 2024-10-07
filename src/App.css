@@ -18,17 +18,29 @@
   text-align: center;
 }
 
+/* Estilo padrão para telas maiores */
 .section {
   height: 100vh;
   width: 100%; 
   display: flex;
   align-items: center;
   justify-content: center;
-  opacity: 0; 
+  opacity: 0;
   transform: translateY(50px);
-  transition: opacity 3s ease-out, transform 3s ease-out; 
+  transition: opacity 3s ease-out, transform 3s ease-out;
   color: beige;
 }
+
+/* Estilo para dispositivos móveis (telas menores que 768px) */
+@media (max-width: 768px) {
+  .section {
+    height: 80vh; /* Permite que a altura se ajuste automaticamente */
+    padding: 20px; /* Adiciona um espaçamento para dispositivos móveis */
+    font-size: 14px; /* Ajusta o tamanho do texto */
+    margin-bottom: -10%;
+  }
+}
+
 
 .section.visible {
   opacity: 1;

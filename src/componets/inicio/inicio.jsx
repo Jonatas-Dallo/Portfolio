@@ -24,9 +24,6 @@ const Inicio = () => {
             <div className='nome-container'>
               <p className='nome-text'>
                 Jonatas Dallo
-                <a href="https://www.linkedin.com/in/jonatas-mathias-147638206/" target="_blank" rel="noopener noreferrer" className='circular-image-linkedin'>
-                  <img src={linkedinImagem} alt="logo do linkedin" />
-                </a>
               </p>
             </div>
           </div>
