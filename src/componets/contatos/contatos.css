@@ -1,0 +1,37 @@
+.contatos-card {
+    width: 90%; /* Ajuste a largura conforme necessário */
+    height: 50%; /* Ajuste a altura conforme necessário */
+    border: 2px solid #27BA06; /* Borda verde */
+    border-radius: 25px; /* Bordas arredondadas */
+    padding: 20px; /* Espaçamento interno */
+    margin: 20px auto; /* Centraliza o card horizontalmente */
+    display: flex;
+    flex-direction: column; /* Para que o conteúdo fique em coluna */
+    justify-content: center; /* Centraliza verticalmente */
+    align-items: center; /* Centraliza horizontalmente */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    background-image: url('../../assets/img/backgrounds/background.png'); /* Substitua pelo caminho da sua imagem */
+    background-size: cover; /* Faz a imagem cobrir todo o card */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Impede que a imagem se repita */
+}
+  
+#contatos {
+    margin-top: -10%; /* Ajuste o valor conforme necessário */
+    margin-bottom: 0;
+}
+
+.section.visible {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out; /* Efeito de transição */  
+}
+  
+.section {
+    opacity: 0; /* Inicia invisível */
+    transition: opacity 0.5s ease-in-out; /* Efeito de transição */
+}
+  
+.hidden {
+    opacity: 0; /* Esconde o elemento */
+    pointer-events: none; /* Impede interações com o elemento invisível */
+}

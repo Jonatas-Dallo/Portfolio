@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+.App {
+  font-family: 'Raleway', Arial;
+  text-align: center;
+}
+
+/* Estilo padrão para telas maiores */
+.section {
+  height: 100vh;
+  width: 100%; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 3s ease-out, transform 3s ease-out;
+  color: beige;
+}
+
+/* Estilo para dispositivos móveis (telas menores que 768px) */
+@media (max-width: 768px) {
+  .section {
+    height: 80vh; /* Permite que a altura se ajuste automaticamente */
+    padding: 20px; /* Adiciona um espaçamento para dispositivos móveis */
+    font-size: 14px; /* Ajusta o tamanho do texto */
+    margin-bottom: -10%;
+  }
+}
+
+.section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+/*Scroll personalizado*/
+::-webkit-scrollbar {
+  width: 10px; 
+  height: 100%
+}
+
+::-webkit-scrollbar-track {
+  background-image: linear-gradient(to bottom, #32b008, #1f9405, #0D7F53); 
+  border-radius: 25px; 
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #4EE00C; 
+  border-radius: 25px; 
+}
