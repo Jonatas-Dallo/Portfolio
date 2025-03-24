@@ -5,7 +5,6 @@ import SobreMim from './componets/sobreMim/sobreMim';
 import SoftSkills from './componets/softSkills/softSkills';
 import HardSkill from './componets/hardSkills/hardSkills';
 import Projetos from './componets/projetos/projetos';
-import Demonstracoes from './componets/demonstracoes/demonstracoes';
 import Certificados from './componets/certificados/certificados';
 import Contatos from './componets/contatos/contatos';
 import NavBarTop from './componets/navBar';
