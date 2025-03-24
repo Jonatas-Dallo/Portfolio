@@ -1,32 +1,206 @@
 .projetos-card {
-    width: 90%; /* Ajuste a largura conforme necessário */
-    height: 85%; /* Ajuste a altura conforme necessário */
-    border: 2px solid #27BA06; /* Borda verde */
-    border-radius: 25px; /* Bordas arredondadas */
-    padding: 20px; /* Espaçamento interno */
-    margin: 20px auto; /* Centraliza o card horizontalmente */
+    width: 90%; /* Largura ajustada para melhor responsividade */
+    height: 45vw; /* Altura dinâmica baseada na largura da tela */
+    border: 2px solid #27BA06;
+    border-radius: 15px;
+    padding: 20px;
     display: flex;
-    flex-direction: column; /* Para que o conteúdo fique em coluna */
-    justify-content: center; /* Centraliza verticalmente */
-    align-items: center; /* Centraliza horizontalmente */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
-    background-image: url('../../assets/img/backgrounds/background.png'); /* Substitua pelo caminho da sua imagem */
-    background-size: cover; /* Faz a imagem cobrir todo o card */
-    background-position: center; /* Centraliza a imagem */
-    background-repeat: no-repeat; /* Impede que a imagem se repita */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-image: url('../../assets/img/backgrounds/background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 0.3s ease-in-out;
+    position: relative;
 }
 
+.projetos-card h2 {
+    font-size: 2vw;
+    color: #4EE00C;
+}
+
+.projetos-card p {
+    font-size: 1.5vw;
+    color: white;
+}
+
+/* Contêiner de projetos ajustado */
+.projetos-container {
+    display: flex;
+    overflow-x: auto; /* Habilita o scroll horizontal */
+    gap: 20px; /* Espaço entre os cards */
+    padding-bottom: 10px; /* Espaço inferior para o scroll */
+    width: 100%; /* Preenche toda a largura disponível */
+    height: 100%;
+    max-width: 100%; /* Certifica-se que o contêiner não ultrapasse a tela */
+    flex-wrap: nowrap; /* Não permite que os cards quebrem para a linha de baixo */
+    justify-content: flex-start; /* Alinha os cards à esquerda */
+    scrollbar-width: thin;
+}
+
+/* Estilo individual para os cards */
+.projeto-item {
+    width: 30%; /* Largura fixa de cada card */
+    min-width: 60vh;
+    height: auto; /* Deixa a altura do card dinâmica, dependendo do conteúdo */
+    max-height: 75vh; 
+    border: 3px solid #27BA06;
+    border-radius: 10px;
+    background-color: #fff;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0; /* Impede que os cards encolham */
+    background: transparent;
+    margin-top: 1%;
+    margin-left: 1%;
+    margin-right: 1%;
+    overflow: hidden;
+}
+
+/* Efeito de hover nos cards */
+.projeto-item:hover {
+    transform: scale(1.05);
+}
+
+/* Estilo para o título (header) */
+.projeto-item h3 {
+    font-size: 1vw; /* Ajuste o tamanho do título */
+    color: #27BA06;
+    margin-bottom: 10px; /* Espaço entre o título e a linha separadora */
+    width: 100%;
+    text-align: center;
+    border-bottom: 3px solid #27BA06; /* Linha separadora abaixo do título */
+    padding-bottom: 20px; /* Distância entre o texto e a linha */
+}
+
+/* Estilo para a descrição (body) */
+.projeto-item p {
+    margin-top: 0;
+    font-size: 1.2vw;
+    color: #3BCD09;
+    text-align: center; /* Centraliza o texto horizontalmente */
+    line-height: 1.6;
+    word-wrap: break-word;
+    margin: 15px 0; /* Ajusta o espaço ao redor da descrição */
+    flex-grow: 1; /* Permite que a descrição ocupe o espaço restante no card */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza o texto horizontalmente */
+    padding: 0 10px; /* Adiciona um pouco de espaço nas laterais */
+    overflow-y: scroll; /* Permite o scroll vertical caso o texto seja muito grande */
+    margin-right: 1%;
+    scrollbar-width: thin; /* Torna a barra de rolagem mais fina */
+    scrollbar-color: transparent transparent; /* Torna a barra de rolagem invisível */
+}
+
+/* Estilo para o footer (onde ficam as imagens) */
+.projeto-item .footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border-top: 3px solid #27BA06; /* Linha separadora acima das imagens */
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.projeto-item .footer img {
+    margin: 0 5px; /* Espaço entre as imagens */
+    width: 50px; /* Tamanho das imagens */
+    height: 50px; /* Tamanho das imagens */
+    border-radius: 8%;
+}
+
+/* Estilo do modal */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 80%;
+    max-width: 500px;
+}
+
+.modal-content h2 {
+    margin-bottom: 10px;
+}
+
+.modal-content p {
+    margin-bottom: 20px;
+}
+
+.modal-content button {
+    padding: 10px 20px;
+    background-color: #27BA06;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.modal-content button:hover {
+    background-color: #218a05;
+}
+
+@media (max-width: 1368px) {
+    .projetos-card {
+        width: 90%;
+        height: 75vw;
+    }
+
+    .projetos-card h2 {
+        font-size: 3vw;
+    }
+
+    .projetos-card p {
+        font-size: 2.5vw;
+    }
+}
+
+/* Efeito de transição na entrada */
 .section.visible {
     opacity: 1;
-    transition: opacity 0.5s ease-in-out; /* Efeito de transição */
+    transform: translateY(0);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
 }
-  
+
 .section {
-    opacity: 0; /* Inicia invisível */
-    transition: opacity 0.5s ease-in-out; /* Efeito de transição */
+    opacity: 0;
+    transform: translateY(20px);
 }
-  
+
 .hidden {
-    opacity: 0; /* Esconde o elemento */
-    pointer-events: none; /* Impede interações com o elemento invisível */
+    opacity: 0;
+    pointer-events: none;
+}
+
+.projeto-item p::-webkit-scrollbar {
+    width: 6px; /* Deixa a barra de rolagem bem fina */
+}
+
+.projeto-item p::-webkit-scrollbar-thumb {
+    background-color: transparent; /* Deixa o polegar da barra de rolagem invisível */
+}
+
+.projeto-item p::-webkit-scrollbar-track {
+    background-color: transparent; /* Deixa a trilha da barra de rolagem invisível */
 }

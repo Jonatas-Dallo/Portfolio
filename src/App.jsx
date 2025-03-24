@@ -20,7 +20,6 @@ function App() {
       <div id="softSkills"><SoftSkills/></div>
       <div id="hardSkills"><HardSkill/></div>
       <div id="projetos"><Projetos/></div>
-      <div id="demonstracoes"><Demonstracoes/></div>
       <div id="certificados"><Certificados/></div>
       <div id="contatos"><Contatos/></div>
       <BotaoTopo/>

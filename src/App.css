@@ -1,20 +1,7 @@
-::-webkit-scrollbar {
-  width: 10px; 
-  height: 100%
-}
-
-::-webkit-scrollbar-track {
-  background-image: linear-gradient(to bottom, #32b008, #1f9405, #0D7F53); 
-  border-radius: 25px; 
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: #4EE00C; 
-  border-radius: 25px; 
-}
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
 
 .App {
-  font-family: sans-serif;
+  font-family: 'Raleway', Arial;
   text-align: center;
 }
 
@@ -41,9 +28,24 @@
   }
 }
 
-
 .section.visible {
   opacity: 1;
   transform: translateY(0);
 }
 
+
+/*Scroll personalizado*/
+::-webkit-scrollbar {
+  width: 10px; 
+  height: 100%
+}
+
+::-webkit-scrollbar-track {
+  background-image: linear-gradient(to bottom, #32b008, #1f9405, #0D7F53); 
+  border-radius: 25px; 
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #4EE00C; 
+  border-radius: 25px; 
+}

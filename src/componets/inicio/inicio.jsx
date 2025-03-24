@@ -14,10 +14,11 @@ const Inicio = () => {
           <div className='linha1'>
             <div className='developer-container'>
               <p className='developer-text'>
-                Developer
+                Devel
                 <a href="https://github.com/Jonatas-Dallo" target="_blank" rel="noopener noreferrer" className='circular-image-github'>
                   <img src={githubImagem} alt="logo do github" />
                 </a>
+                per
               </p>
             </div>
             <p>Full Stack</p>

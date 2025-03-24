@@ -1,38 +1,32 @@
+/* Estilização do card principal */
 .inicio-card {
-    width: 90%;
-    height: 85%;
+    display: grid;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    align-items: center;
     border: 2px solid #27BA06;
     border-radius: 25px;
     padding: 20px;
     margin: 20px auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background-image: url('../../assets/img/backgrounds/background_inicio.png');
+    background-image: url('../../assets/img/backgrounds/background.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    width: 90%;
+    height: 85%;
     margin-top: 7%;
 }
 
+/* Estilização do texto principal */
 .inicio-texto {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
+    font-weight: bold;
 }
 
 .linha1 {
-    display: flex;
-    flex-direction: column;
+    display: grid;
     gap: 10px;
-    width: 100%;
-    text-align: center; /* Centraliza os textos */
-    font-weight: bold;
 }
 
 .linha1 p {
@@ -42,7 +36,7 @@
 }
 
 .linha1 p:nth-child(1) {
-    font-size: 9vw; /* Usa unidade relativa à largura da tela */
+    font-size: 9vw;
 }
 
 .linha1 p:nth-child(2) {
@@ -53,219 +47,78 @@
     font-size: 5vw;
 }
 
-.developer-container {
-    position: relative;
-    display: inline-block;
+/* Estilização do container do ícone do GitHub */
+.developer-text {
+    display: inline-flex;
+    align-items: center;  
+    gap: 2px;
+    font-size: 9vw;
+    margin: 0;
+    color: black;
+    -webkit-text-stroke: 4px #27BA06;
 }
 
+/* Ajuste do container da imagem circular */
 .circular-image-github {
-    position: absolute;
-    top: 11.5%; /* Alinha verticalmente no topo da letra */
-    left: 55.8%;
-    transform: translate(-50%, -10%); /* Centraliza a imagem horizontalmente sobre o "O" */
-}
-
-.circular-image-github img {
-    width: 5vw; /* Ajusta a largura da imagem proporcionalmente à largura da viewport */
-    height: 5vw;
-    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    overflow: hidden;
     border: 3px solid #27BA06;
+    width: 5.5vw;
+    height: 5.5vw;
     transition: transform 0.3s ease;
 }
 
-.circular-image-github:hover img {
+/* Garantindo que a imagem preencha o círculo corretamente */
+.circular-image-github img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Efeito de hover */
+.circular-image-github:hover {
     transform: scale(1.5);
 }
 
-@media (max-width: 1024px) {
-    .linha1 p:nth-child(1) {
-        font-size: 10vw;
-    }
-    .linha1 p:nth-child(2) {
-        font-size: 10vw;
-    }
-    .linha1 p:nth-child(3) {
-        font-size: 7vw;
-    }
-
-    .inicio-card{
-        margin-top: 8%;
-    }
-
-    .circular-image-github img {
-        width: 5.5vw; /* Ajuste de acordo com a tela menor */
-        height: 5.5vw;
-    }
-
-    .circular-image-github {
-        position: absolute;
-        top: 11.5%; /* Alinha verticalmente no topo da letra */
-        left: 56.6%;
-        transform: translate(-50%, -10%); /* Centraliza a imagem horizontalmente sobre o "O" */
-    }
-}
-
-@media (max-width: 902px) {
-    .linha1 p:nth-child(1) {
-        font-size: 10vw;
-    }
-    .linha1 p:nth-child(2) {
-        font-size: 10vw;
-    }
-    .linha1 p:nth-child(3) {
-        font-size: 7vw;
-    }
-
-    .inicio-card{
-        margin-top: 14%;
-    }
-}
-
+/* Responsividade */
 @media (max-width: 768px) {
-    .linha1 p:nth-child(1) {
-        font-size: 10vw;
-    }
-    .linha1 p:nth-child(2) {
-        font-size: 10vw;
-    }
-    .linha1 p:nth-child(3) {
-        font-size: 7vw;
-    }
-
-    .inicio-card{
-        margin-top: -5%;
-    }
-
-    .linha1{
-        gap: 30px;
-    }
-
-    .circular-image-github img {
-        width: 5.5vw; /* Ajuste de acordo com a tela menor */
-        height: 5.5vw;
-    }
+    .linha1 p:nth-child(1) { font-size: 10vw; }
+    .linha1 p:nth-child(2) { font-size: 10vw; }
+    .linha1 p:nth-child(3) { font-size: 7vw; }
 
     .circular-image-github {
-        position: absolute;
-        top: 11.5%; /* Alinha verticalmente no topo da letra */
-        left: 57.1%;
-        transform: translate(-50%, -10%); /* Centraliza a imagem horizontalmente sobre o "O" */
-    }
-}
-
-@media (max-width: 660px) {
-    .circular-image-github img {
-        width: 5.6vw; /* Ajuste de acordo com a tela menor */
-        height: 5.6vw;
-    }
-
-    .circular-image-github {
-        position: absolute;
-        top: 11.5%; /* Alinha verticalmente no topo da letra */
-        left: 57.3%;
-        transform: translate(-50%, -10%); /* Centraliza a imagem horizontalmente sobre o "O" */
-    }
-}
-
-@media (max-width: 600px) {
-    .circular-image-github img {
-        width: 5.6vw; /* Ajuste de acordo com a tela menor */
-        height: 5.6vw;
-    }
-
-    .circular-image-github {
-        position: absolute;
-        top: 11.5%; /* Alinha verticalmente no topo da letra */
-        left: 57.4%;
-        transform: translate(-50%, -10%); /* Centraliza a imagem horizontalmente sobre o "O" */
-    }
-}
-
-@media (max-width: 550px) {
-    .circular-image-github img {
-        width: 5.6vw; /* Ajuste de acordo com a tela menor */
-        height: 5.6vw;
-    }
-
-    .circular-image-github {
-        position: absolute;
-        top: 11.5%; /* Alinha verticalmente no topo da letra */
-        left: 57.5%;
-        transform: translate(-50%, -10%); /* Centraliza a imagem horizontalmente sobre o "O" */
+        width: 7vw;
+        height: 7vw;
     }
 }
 
 @media (max-width: 480px) {
-    .linha1 p:nth-child(1) {
-        font-size: 10vw;
-    }
-    .linha1 p:nth-child(2) {
-        font-size: 10vw;
-    }
-    .linha1 p:nth-child(3) {
-        font-size: 7vw;
-    }
-
-    .linha1{
-        gap: 40px;
-    }
-
-    .circular-image-github img {
-        width: 5.6vw; /* Ajuste de acordo com a tela menor */
-        height: 5.6vw;
-    }
+    .linha1 p:nth-child(1) { font-size: 12vw; }
+    .linha1 p:nth-child(2) { font-size: 12vw; }
+    .linha1 p:nth-child(3) { font-size: 9vw; }
 
     .circular-image-github {
-        position: absolute;
-        top: 11.5%; /* Alinha verticalmente no topo da letra */
-        left: 57.8%;
-        transform: translate(-50%, -10%); /* Centraliza a imagem horizontalmente sobre o "O" */
+        width: 8vw;
+        height: 8vw;
     }
 }
 
-@media (max-width: 410px) {
-    .circular-image-github img {
-        width: 5.6vw; /* Ajuste de acordo com a tela menor */
-        height: 5.6vw;
-    }
-
-    .circular-image-github {
-        position: absolute;
-        top: 11.5%; /* Alinha verticalmente no topo da letra */
-        left: 58.1%;
-        transform: translate(-50%, -10%); /* Centraliza a imagem horizontalmente sobre o "O" */
-    }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* Animação de visibilidade */
 .section.visible {
     opacity: 1;
-    transition: opacity 0.5s ease-in-out; /* Efeito de transição */
+    transition: opacity 0.5s ease-in-out;
 }
-  
+
 .section {
-    opacity: 0; /* Inicia invisível */
-    transition: opacity 0.5s ease-in-out; /* Efeito de transição */
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
 }
-  
+
 .hidden {
-    opacity: 0; /* Esconde o elemento */
-    pointer-events: none; /* Impede interações com o elemento invisível */
+    opacity: 0;
+    pointer-events: none;
 }

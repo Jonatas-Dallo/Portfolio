@@ -29,7 +29,6 @@ const NavBarTop = () => {
         <li className={`nav-item ${activeSection === 'softSkills' ? 'active' : ''}`} onClick={() => handleClick('softSkills')}>Software Skills</li>
         <li className={`nav-item ${activeSection === 'hardSkills' ? 'active' : ''}`} onClick={() => handleClick('hardSkills')}>Hardware Skills</li>
         <li className={`nav-item ${activeSection === 'projetos' ? 'active' : ''}`} onClick={() => handleClick('projetos')}>Projetos</li>
-        <li className={`nav-item ${activeSection === 'demonstracoes' ? 'active' : ''}`} onClick={() => handleClick('demonstracoes')}>Demonstrações</li>
         <li className={`nav-item ${activeSection === 'certificados' ? 'active' : ''}`} onClick={() => handleClick('certificados')}>Certificados</li>
         <li className={`nav-item ${activeSection === 'contatos' ? 'active' : ''}`} onClick={() => handleClick('contatos')}>Contatos</li>
       </ul>
