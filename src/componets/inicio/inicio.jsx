@@ -1,6 +1,10 @@
 import React from 'react';
 import { useInView } from 'react-intersection-observer';
 import githubImagem from '../../assets/icons/github.png';
+<<<<<<< HEAD
+=======
+import linkedinImagem from '../../assets/icons/linkedin.png';
+>>>>>>> 6f98f4c11e9a2e91b212addc0f4192529403c2cc
 import './inicio.css';
 
 const Inicio = () => {

@@ -51,7 +51,10 @@
     ]
   },
   "devDependencies": {
+<<<<<<< HEAD
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+=======
+>>>>>>> 6f98f4c11e9a2e91b212addc0f4192529403c2cc
     "@types/react-slick": "^0.23.12",
     "@types/react-transition-group": "^4.4.9"
   }
