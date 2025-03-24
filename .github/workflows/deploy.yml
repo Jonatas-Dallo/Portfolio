@@ -10,37 +10,25 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # Faz o checkout do código
-      - name: Checkout repository
-        uses: actions/checkout@v2
-
-<<<<<<< HEAD
       - name: Set CI environment to false
         run: echo "CI=false" >> $GITHUB_ENV
 
-=======
->>>>>>> 6f98f4c11e9a2e91b212addc0f4192529403c2cc
-      # Configura o Node.js
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
       - name: Set up Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: '16'  # ou qualquer versão que você estiver usando
+          node-version: '14'
 
-      # Instala as dependências do projeto
       - name: Install dependencies
-        run: |
-          npm install
+        run: npm install
 
-      # Faz o build do projeto
-      - name: Build project
-        run: |
-          npm run build
+      - name: Build the project
+        run: npm run build
 
-      # Configura o GitHub Pages para hospedar os arquivos
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          branch: gh-pages  # a branch onde o site será hospedado
-          folder: build  # a pasta que contém os arquivos estáticos
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          branch: gh-pages
+          folder: build
